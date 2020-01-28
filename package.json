@@ -18,6 +18,8 @@
   "homepage": "https://github.com/Ltuppince/softwareEngineeringTeamGenerator#readme",
   "dependencies": {
     "inquirer": "^7.0.3",
-    "jest": "^25.1.0"
+    "jest": "^25.1.0",
+    "prompt": "^1.0.0",
+    "until": "^0.1.1"
   }
 }
