@@ -113,8 +113,8 @@ function devTeamMap() {
         <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4">${answers.teamName}</h1>
-            <p class="lead">${answers.engCount}</p>
-            <p class="lead">${answers.intCount}</p>
+            <p class="lead">Number of Engineers:${answers.engCount}</p>
+            <p class="lead">Number of Interns:${answers.intCount}</p>
         </div>
         </div>
         `;
@@ -123,10 +123,10 @@ function devTeamMap() {
         let managerHtml = `
         <div class="card" style="width: 18rem;">
         <div class="card-body">
-            <h5 class="card-title">${answers.managerName}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">${answers.managerEmail}</h6>
-            <p class="card-text">${answers.managerId}</p>
-            <p class="card-text">${answers.managerOfficeNumber}</p>
+            <h5 class="card-title">Name:${answers.managerName}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Email:${answers.managerEmail}</h6>
+            <p class="card-text">Id:${answers.managerId}</p>
+            <p class="card-text">Office#${answers.managerOfficeNumber}</p>
         </div>
         </div>
         `;
@@ -136,10 +136,10 @@ function devTeamMap() {
             let engineerCard = `
             <div class="card" style="width: 18rem;">
         <div class="card-body">
-            <h5 class="card-title">${answers.engineerName}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">${answers.engineerEmail}</h6>
-            <p class="card-text">${answers.engineerId}</p>
-            <p class="card-text">${answers.engineerGithub}</p>
+            <h5 class="card-title">Name:${answers.engineerName}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Email:${answers.engineerEmail}</h6>
+            <p class="card-text">Id:${answers.engineerId}</p>
+            <p class="card-text">Github user name:${answers.engineerGithub}</p>
         </div>
         </div>
             `
@@ -152,17 +152,17 @@ function devTeamMap() {
             let internCard = `
             <div class="card" style="width: 18rem;">
         <div class="card-body">
-            <h5 class="card-title">${answers.internName}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">${answers.internEmail}</h6>
-            <p class="card-text">${answers.internId}</p>
-            <p class="card-text">${answers.internSchool}</p>
+            <h5 class="card-title">Name:${answers.internName}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Email:${answers.internEmail}</h6>
+            <p class="card-text">Id:${answers.internId}</p>
+            <p class="card-text">School:${answers.internSchool}</p>
         </div>
         </div>
             `
             internHtml += internCard
         }
         mainHtml += internHtml
-        
+
         mainHtml += `</body>
         </html>`
 
